@@ -9,5 +9,9 @@ const font = Poppins({
 });
 
 export const Logo = () => {
-  return <p className={cn("font-semibold", font.className)}>Jotion</p>;
+  return (
+    <div className="hidden md:flex items-center gap-x-2">
+      <p className={cn("font-semibold", font.className)}>Jotion</p>
+    </div>
+  );
 };

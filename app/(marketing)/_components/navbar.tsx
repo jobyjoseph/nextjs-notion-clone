@@ -7,7 +7,8 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { Spinner } from "@/components/spinner";
 import { useConvexAuth } from "convex/react";
-import { SignInButton } from "@clerk/clerk-react";
+import { SignInButton, UserButton } from "@clerk/clerk-react";
+import Link from "next/link";
 
 export const Navbar = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
@@ -32,6 +33,14 @@ export const Navbar = () => {
             <SignInButton mode="modal">
               <Button size="sm">Get Jotion free</Button>
             </SignInButton>
+          </>
+        )}
+        {isAuthenticated && !isLoading && (
+          <>
+            <Button variant="ghost" size="sm" asChild>
+              <Link href="/documents">Enter Jotion</Link>
+            </Button>
+            <UserButton afterSignOutUrl="/" />
           </>
         )}
         <ModeToggle />

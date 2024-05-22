@@ -122,6 +122,7 @@ export const Navigation = () => {
         <div className="mt-4">
           {documents?.map((document) => (
             <p key={document._id}>{document.title}</p>
+            <p>Sub menu</p>
           ))}
         </div>
         <div

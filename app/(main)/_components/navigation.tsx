@@ -140,6 +140,7 @@ export const Navigation = () => {
           <Item label="Search" icon={Search} isSearch onClick={() => {}} />
           <Item label="Settings" icon={Settings} onClick={() => {}} />
           <Item onClick={handleCreate} label="New page" icon={PlusCircle} />
+          <Item />
         </div>
         <div className="mt-4">
           {documents?.map((document) => (

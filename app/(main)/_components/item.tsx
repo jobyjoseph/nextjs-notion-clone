@@ -53,6 +53,7 @@ export const Item = ({
         if (!expanded) {
           onExpand?.();
         }
+        // Uncomment later
         //router.push(`/documents/${documentId}`);
       }
     );

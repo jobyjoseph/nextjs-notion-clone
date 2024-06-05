@@ -74,7 +74,11 @@ export const TranshBox = () => {
           placeholder="Filter by page title..."
         />
       </div>
-      <div className="mt-2 px-1 pb-1"></div>
+      <div className="mt-2 px-1 pb-1">
+        <p className="hidden last:block text-xs text-center text-muted-foreground pb-2">
+          No documents found.
+        </p>
+      </div>
     </div>
   );
 };

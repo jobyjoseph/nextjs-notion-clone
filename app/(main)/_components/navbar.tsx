@@ -27,7 +27,7 @@ export const Navbar = ({ isCollapsed, onResetWidth }: NavbarProps) => {
 
   return (
     <>
-      <nav></nav>
+      <nav>Navbar here</nav>
     </>
   );
 };

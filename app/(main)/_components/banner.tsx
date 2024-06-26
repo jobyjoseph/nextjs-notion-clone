@@ -37,5 +37,5 @@ export const Banner = ({ documentId }: BannerProps) => {
     });
   };
 
-  return <div className="w-full bg-rose-500">Banner</div>;
+  return <div className="w-full bg-rose-500">Banner Here</div>;
 };

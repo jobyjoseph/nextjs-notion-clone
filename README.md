@@ -9,3 +9,4 @@
 - Use convex real time DB
 - Clerk authentication
 - `class-variance-authority` package
+- `emoji-picker-react` package to implement emoji picker

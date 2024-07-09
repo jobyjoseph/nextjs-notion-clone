@@ -49,6 +49,13 @@ export const Toolbar = ({ initialData, preview }: ToolbarProps) => {
     }
   };
 
+  const onIconSelect = (icon: string) => {
+    update({
+      id: initialData._id,
+      icon,
+    });
+  };
+
   return (
     <div className="pl-[54px] group relative">
       {!!initialData.icon && !preview && (

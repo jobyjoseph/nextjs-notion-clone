@@ -1,4 +1,4 @@
-## Things Learned
+# Things Learned
 
 - Setup **Next.js** with **Tailwind CSS**
 - **Trunk** VS Code extension for code quality

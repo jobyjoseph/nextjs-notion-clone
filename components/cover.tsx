@@ -24,7 +24,7 @@ export const Cover = ({ url, preview }: CoverImageProps) => {
         <div className="opacity-0 group-hover:opacity-100 absolute bottom-5 right-5 flex items-center gap-x-2">
           <Button onClick={() => {}} className="text-muted-foreground text-xs">
             <ImageIcon className="h-4 w-4 mr-2" />
-            Change cover
+            Change cover image
           </Button>
         </div>
       )}

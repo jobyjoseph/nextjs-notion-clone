@@ -3,7 +3,8 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { ImageIcon } from "lucide-react";
+import { ImageIcon, X } from "lucide-react";
+import { useCoverImage } from "@/hooks/use-cover-image";
 
 interface CoverImageProps {
   url?: string;
@@ -11,6 +12,7 @@ interface CoverImageProps {
 }
 
 export const Cover = ({ url, preview }: CoverImageProps) => {
+  const coverImage = useCoverImage();
   return (
     <div
       className={cn(
@@ -22,9 +24,16 @@ export const Cover = ({ url, preview }: CoverImageProps) => {
       {!!url && <Image src={url} fill alt="Cover" className="object-cover" />}
       {url && !preview && (
         <div className="opacity-0 group-hover:opacity-100 absolute bottom-5 right-5 flex items-center gap-x-2">
-          <Button onClick={() => {}} className="text-muted-foreground text-xs">
+          <Button
+            onClick={coverImage.onOpen}
+            className="text-muted-foreground text-xs"
+          >
             <ImageIcon className="h-4 w-4 mr-2" />
-            Change cover image
+            Change cover
+          </Button>
+          <Button onClick={() => {}} className="text-muted-foreground text-xs">
+            <X className="h-4 w-4 mr-2" />
+            Remove
           </Button>
         </div>
       )}

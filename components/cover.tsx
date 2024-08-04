@@ -33,7 +33,7 @@ export const Cover = ({ url, preview }: CoverImageProps) => {
           </Button>
           <Button onClick={() => {}} className="text-muted-foreground text-xs">
             <X className="h-4 w-4 mr-2" />
-            Remove
+            Remove image
           </Button>
         </div>
       )}

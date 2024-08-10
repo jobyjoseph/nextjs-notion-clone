@@ -11,4 +11,4 @@
 - `class-variance-authority` package
 - `emoji-picker-react` package to implement emoji picker for document title
   
-Enjoy!!!
+Enjoy!

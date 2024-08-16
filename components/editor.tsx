@@ -9,6 +9,6 @@ interface EditorProps {
 }
 
 export const Editor = ({ onChange, initialContent, editable }: EditorProps) => {
-  const editor: BlockNoteEditor = useBlo;
+  const editor: BlockNoteEditor = useBlockNoteEditor();
   return <div>Editor</div>;
 };

@@ -12,3 +12,5 @@
 - `emoji-picker-react` package to implement emoji picker for document title
   
 Enjoy!!!
+
+Course completed on Aug 19, 2024

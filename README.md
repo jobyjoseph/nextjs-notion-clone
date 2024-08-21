@@ -10,6 +10,7 @@
 - Clerk authentication
 - `class-variance-authority` package
 - `emoji-picker-react` package to implement emoji picker for document title
+- Notion like editor is done using blocknote editor package
   
 Enjoy!!!
 
